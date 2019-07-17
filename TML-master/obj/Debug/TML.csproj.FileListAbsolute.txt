@@ -1,0 +1,11 @@
+C:\Users\jlot\Documents\TML-master\bin\Debug\TML.exe.config
+C:\Users\jlot\Documents\TML-master\bin\Debug\TML.exe
+C:\Users\jlot\Documents\TML-master\bin\Debug\TML.pdb
+C:\Users\jlot\Documents\TML-master\obj\Debug\TML.csprojAssemblyReference.cache
+C:\Users\jlot\Documents\TML-master\obj\Debug\TML.Launcher.resources
+C:\Users\jlot\Documents\TML-master\obj\Debug\TML.FolderChooser.resources
+C:\Users\jlot\Documents\TML-master\obj\Debug\TML.Properties.Resources.resources
+C:\Users\jlot\Documents\TML-master\obj\Debug\TML.csproj.GenerateResource.cache
+C:\Users\jlot\Documents\TML-master\obj\Debug\TML.csproj.CoreCompileInputs.cache
+C:\Users\jlot\Documents\TML-master\obj\Debug\TML.exe
+C:\Users\jlot\Documents\TML-master\obj\Debug\TML.pdb

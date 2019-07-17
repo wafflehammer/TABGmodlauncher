@@ -1,0 +1,10 @@
+C:\Users\jlot\Documents\TML-master\bin\Release\TML.exe.config
+C:\Users\jlot\Documents\TML-master\bin\Release\TML.exe
+C:\Users\jlot\Documents\TML-master\bin\Release\TML.pdb
+C:\Users\jlot\Documents\TML-master\obj\Release\TML.Launcher.resources
+C:\Users\jlot\Documents\TML-master\obj\Release\TML.FolderChooser.resources
+C:\Users\jlot\Documents\TML-master\obj\Release\TML.Properties.Resources.resources
+C:\Users\jlot\Documents\TML-master\obj\Release\TML.csproj.GenerateResource.cache
+C:\Users\jlot\Documents\TML-master\obj\Release\TML.csproj.CoreCompileInputs.cache
+C:\Users\jlot\Documents\TML-master\obj\Release\TML.exe
+C:\Users\jlot\Documents\TML-master\obj\Release\TML.pdb
