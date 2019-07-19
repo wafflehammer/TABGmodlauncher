@@ -17,7 +17,7 @@ namespace TML
             InitializeComponent();
             mods = false;
             gamePath = "";
-            radioButton1.Checked = true;
+            radioButton2.Checked = true;
            
         }
 
@@ -154,9 +154,9 @@ namespace TML
             // hide launcher
             titleLabel.Hide();
             changeDir.Hide();
-            aboutButton.Hide();
+            
             modChooser.Hide();
-            discordLabel.Hide();
+          
             downloadBar.Hide();
             
             launch.Hide();
@@ -173,7 +173,7 @@ namespace TML
             dev.Show();
             aboutLabel.Show();
            
-            aboutLogo.Show();
+           
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -181,9 +181,9 @@ namespace TML
             // Show launcher
             titleLabel.Show();
             changeDir.Show();
-            aboutButton.Show();
+            
             modChooser.Show();
-            discordLabel.Show();
+         
             downloadBar.Show();
           
             launch.Show();
@@ -200,9 +200,27 @@ namespace TML
             dev.Hide();
             aboutLabel.Hide();
        
-            aboutLogo.Hide();
+            
         }
 
-        
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.gg/rja554A");
+        }
     }
 }
