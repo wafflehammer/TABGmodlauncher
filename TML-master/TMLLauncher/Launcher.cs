@@ -149,74 +149,12 @@ namespace TML
             System.Diagnostics.Process.Start("https://discord.gg/CwrNugT");
         }
 
-        private void aboutButton_Click(object sender, EventArgs e)
-        {
-            // hide launcher
-            titleLabel.Hide();
-            changeDir.Hide();
-            
-            modChooser.Hide();
-          
-            downloadBar.Hide();
-            
-            launch.Hide();
-           
+  
 
-            //show about
-            mhnd.Show();
-            testAndFeed.Show();
-            mfc.Show();
-            polarnf.Show();
-            audixas.Show();
-            commSupport.Show();
-            commName.Show();
-            dev.Show();
-            aboutLabel.Show();
-           
-           
-        }
 
-        private void backButton_Click(object sender, EventArgs e)
-        {
-            // Show launcher
-            titleLabel.Show();
-            changeDir.Show();
-            
-            modChooser.Show();
-         
-            downloadBar.Show();
-          
-            launch.Show();
-          
+        
 
-            //Hide about
-            mhnd.Hide();
-            testAndFeed.Hide();
-            mfc.Hide();
-            polarnf.Hide();
-            audixas.Hide();
-            commSupport.Hide();
-            commName.Hide();
-            dev.Hide();
-            aboutLabel.Hide();
-       
-            
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void aboutLogo_Click(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

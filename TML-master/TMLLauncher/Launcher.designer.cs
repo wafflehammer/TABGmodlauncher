@@ -45,7 +45,6 @@ namespace TML
             this.testAndFeed = new System.Windows.Forms.Label();
             this.mhnd = new System.Windows.Forms.Label();
             this.dev = new System.Windows.Forms.Label();
-            this.aboutLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -269,18 +268,6 @@ namespace TML
             this.dev.TabIndex = 27;
             this.dev.Text = "Development";
             // 
-            // aboutLabel
-            // 
-            this.aboutLabel.AutoSize = true;
-            this.aboutLabel.BackColor = System.Drawing.Color.Transparent;
-            this.aboutLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aboutLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.aboutLabel.Location = new System.Drawing.Point(8, 17);
-            this.aboutLabel.Name = "aboutLabel";
-            this.aboutLabel.Size = new System.Drawing.Size(90, 40);
-            this.aboutLabel.TabIndex = 26;
-            this.aboutLabel.Text = "About";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -300,12 +287,11 @@ namespace TML
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(443, 170);
+            this.label2.Location = new System.Drawing.Point(452, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 21);
             this.label2.TabIndex = 40;
             this.label2.Text = "MAD THANKS TO:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -319,7 +305,6 @@ namespace TML
             this.label3.Size = new System.Drawing.Size(93, 20);
             this.label3.TabIndex = 41;
             this.label3.Text = "Ape Lincoln";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -594,7 +579,6 @@ namespace TML
             this.Controls.Add(this.testAndFeed);
             this.Controls.Add(this.mhnd);
             this.Controls.Add(this.dev);
-            this.Controls.Add(this.aboutLabel);
             this.Controls.Add(this.modChooser);
             this.Controls.Add(this.downloadBar);
             this.Controls.Add(this.changeDir);
@@ -633,7 +617,6 @@ namespace TML
         private System.Windows.Forms.Label testAndFeed;
         private System.Windows.Forms.Label mhnd;
         private System.Windows.Forms.Label dev;
-        private System.Windows.Forms.Label aboutLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
