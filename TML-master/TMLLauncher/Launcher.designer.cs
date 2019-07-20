@@ -50,22 +50,17 @@ namespace TML
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.discordButton = new System.Windows.Forms.Button();
             this.modChooser.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,10 +71,10 @@ namespace TML
             this.launch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.launch.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace;
             this.launch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.launch.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.launch.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.launch.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.launch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.launch.Location = new System.Drawing.Point(669, 406);
+            this.launch.Location = new System.Drawing.Point(625, 406);
             this.launch.Margin = new System.Windows.Forms.Padding(2);
             this.launch.Name = "launch";
             this.launch.Size = new System.Drawing.Size(341, 50);
@@ -94,13 +89,13 @@ namespace TML
             this.titleLabel.AutoSize = true;
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.CadetBlue;
-            this.titleLabel.Location = new System.Drawing.Point(283, 8);
+            this.titleLabel.Location = new System.Drawing.Point(272, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(468, 65);
+            this.titleLabel.Size = new System.Drawing.Size(422, 65);
             this.titleLabel.TabIndex = 14;
-            this.titleLabel.Text = "TABG MOD LOADER";
+            this.titleLabel.Text = "TABG Mod Loader";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // changeDir
@@ -108,9 +103,9 @@ namespace TML
             this.changeDir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.changeDir.BackColor = System.Drawing.Color.Transparent;
             this.changeDir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changeDir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeDir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeDir.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.changeDir.Location = new System.Drawing.Point(918, 20);
+            this.changeDir.Location = new System.Drawing.Point(829, 20);
             this.changeDir.Name = "changeDir";
             this.changeDir.Size = new System.Drawing.Size(136, 47);
             this.changeDir.TabIndex = 15;
@@ -125,7 +120,7 @@ namespace TML
             this.downloadBar.BackColor = System.Drawing.Color.MediumAquamarine;
             this.downloadBar.Location = new System.Drawing.Point(12, 461);
             this.downloadBar.Name = "downloadBar";
-            this.downloadBar.Size = new System.Drawing.Size(1042, 10);
+            this.downloadBar.Size = new System.Drawing.Size(953, 10);
             this.downloadBar.TabIndex = 17;
             // 
             // modChooser
@@ -136,7 +131,7 @@ namespace TML
             this.modChooser.Controls.Add(this.radioButton1);
             this.modChooser.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modChooser.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.modChooser.Location = new System.Drawing.Point(57, 398);
+            this.modChooser.Location = new System.Drawing.Point(12, 399);
             this.modChooser.Name = "modChooser";
             this.modChooser.Size = new System.Drawing.Size(607, 57);
             this.modChooser.TabIndex = 18;
@@ -148,7 +143,7 @@ namespace TML
             this.radioButton2.AutoSize = true;
             this.radioButton2.Checked = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(6, 36);
+            this.radioButton2.Location = new System.Drawing.Point(6, 33);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(77, 21);
             this.radioButton2.TabIndex = 20;
@@ -160,7 +155,7 @@ namespace TML
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(6, 19);
+            this.radioButton1.Location = new System.Drawing.Point(6, 15);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(63, 21);
             this.radioButton1.TabIndex = 19;
@@ -171,12 +166,11 @@ namespace TML
             // 
             this.commName.AutoSize = true;
             this.commName.BackColor = System.Drawing.Color.Transparent;
-            this.commName.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.commName.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.commName.Location = new System.Drawing.Point(31, 263);
+            this.commName.Location = new System.Drawing.Point(31, 267);
             this.commName.Name = "commName";
-            this.commName.Size = new System.Drawing.Size(136, 20);
+            this.commName.Size = new System.Drawing.Size(133, 20);
             this.commName.TabIndex = 34;
             this.commName.Text = "TABG\'s Last Hope";
             // 
@@ -184,24 +178,23 @@ namespace TML
             // 
             this.commSupport.AutoSize = true;
             this.commSupport.BackColor = System.Drawing.Color.Transparent;
-            this.commSupport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commSupport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.commSupport.ForeColor = System.Drawing.SystemColors.Control;
-            this.commSupport.Location = new System.Drawing.Point(18, 242);
+            this.commSupport.Location = new System.Drawing.Point(14, 246);
             this.commSupport.Name = "commSupport";
-            this.commSupport.Size = new System.Drawing.Size(154, 21);
+            this.commSupport.Size = new System.Drawing.Size(162, 21);
             this.commSupport.TabIndex = 33;
-            this.commSupport.Text = "Community Support";
+            this.commSupport.Text = "Community Support:";
             // 
             // audixas
             // 
             this.audixas.AutoSize = true;
             this.audixas.BackColor = System.Drawing.Color.Transparent;
-            this.audixas.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.audixas.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.audixas.ForeColor = System.Drawing.Color.YellowGreen;
-            this.audixas.Location = new System.Drawing.Point(31, 211);
+            this.audixas.Location = new System.Drawing.Point(31, 223);
             this.audixas.Name = "audixas";
-            this.audixas.Size = new System.Drawing.Size(67, 20);
+            this.audixas.Size = new System.Drawing.Size(65, 20);
             this.audixas.TabIndex = 32;
             this.audixas.Text = "Audixas";
             // 
@@ -209,100 +202,95 @@ namespace TML
             // 
             this.polarnf.AutoSize = true;
             this.polarnf.BackColor = System.Drawing.Color.Transparent;
-            this.polarnf.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.polarnf.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.polarnf.ForeColor = System.Drawing.Color.Yellow;
-            this.polarnf.Location = new System.Drawing.Point(31, 191);
+            this.polarnf.Location = new System.Drawing.Point(31, 203);
             this.polarnf.Name = "polarnf";
-            this.polarnf.Size = new System.Drawing.Size(67, 20);
+            this.polarnf.Size = new System.Drawing.Size(71, 20);
             this.polarnf.TabIndex = 31;
-            this.polarnf.Text = "PolarNF";
+            this.polarnf.Text = "PolarCST";
             // 
             // mfc
             // 
             this.mfc.AutoSize = true;
             this.mfc.BackColor = System.Drawing.Color.Transparent;
-            this.mfc.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mfc.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mfc.ForeColor = System.Drawing.Color.DarkOrange;
-            this.mfc.Location = new System.Drawing.Point(31, 171);
+            this.mfc.Location = new System.Drawing.Point(31, 183);
             this.mfc.Name = "mfc";
-            this.mfc.Size = new System.Drawing.Size(113, 20);
+            this.mfc.Size = new System.Drawing.Size(114, 20);
             this.mfc.TabIndex = 30;
-            this.mfc.Text = "amanda bynes";
+            this.mfc.Text = "Amanda Bynes";
             // 
             // testAndFeed
             // 
             this.testAndFeed.AutoSize = true;
             this.testAndFeed.BackColor = System.Drawing.Color.Transparent;
-            this.testAndFeed.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testAndFeed.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testAndFeed.ForeColor = System.Drawing.SystemColors.Control;
-            this.testAndFeed.Location = new System.Drawing.Point(14, 150);
+            this.testAndFeed.Location = new System.Drawing.Point(14, 162);
             this.testAndFeed.Name = "testAndFeed";
-            this.testAndFeed.Size = new System.Drawing.Size(164, 21);
+            this.testAndFeed.Size = new System.Drawing.Size(172, 21);
             this.testAndFeed.TabIndex = 29;
-            this.testAndFeed.Text = "Testing and Feedback";
+            this.testAndFeed.Text = "Testing and Feedback:";
             // 
             // mhnd
             // 
             this.mhnd.AutoSize = true;
             this.mhnd.BackColor = System.Drawing.Color.Transparent;
-            this.mhnd.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mhnd.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mhnd.ForeColor = System.Drawing.Color.Salmon;
-            this.mhnd.Location = new System.Drawing.Point(31, 116);
+            this.mhnd.Location = new System.Drawing.Point(31, 122);
             this.mhnd.Name = "mhnd";
-            this.mhnd.Size = new System.Drawing.Size(305, 20);
+            this.mhnd.Size = new System.Drawing.Size(252, 20);
             this.mhnd.TabIndex = 28;
-            this.mhnd.Text = "MichaelHasNoDad#0486 - MOD Launcher";
+            this.mhnd.Text = "MichaelHasNoDad - Mod Launcher";
             // 
             // dev
             // 
             this.dev.AutoSize = true;
             this.dev.BackColor = System.Drawing.Color.Transparent;
-            this.dev.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dev.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dev.ForeColor = System.Drawing.SystemColors.Control;
-            this.dev.Location = new System.Drawing.Point(11, 66);
+            this.dev.Location = new System.Drawing.Point(14, 81);
             this.dev.Name = "dev";
-            this.dev.Size = new System.Drawing.Size(106, 21);
+            this.dev.Size = new System.Drawing.Size(113, 21);
             this.dev.TabIndex = 27;
-            this.dev.Text = "Development";
+            this.dev.Text = "Development:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(31, 87);
+            this.label1.Location = new System.Drawing.Point(31, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 20);
+            this.label1.Size = new System.Drawing.Size(258, 20);
             this.label1.TabIndex = 39;
-            this.label1.Text = "amanda bynes - Game MOD";
+            this.label1.Text = "Amanda Bynes - Mod Development";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(452, 171);
+            this.label2.Location = new System.Drawing.Point(429, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 21);
+            this.label2.Size = new System.Drawing.Size(122, 21);
             this.label2.TabIndex = 40;
-            this.label2.Text = "MAD THANKS TO:";
+            this.label2.Text = "Mad Thanks To:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(296, 203);
+            this.label3.Location = new System.Drawing.Point(361, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 20);
+            this.label3.Size = new System.Drawing.Size(91, 20);
             this.label3.TabIndex = 41;
             this.label3.Text = "Ape Lincoln";
             // 
@@ -310,90 +298,47 @@ namespace TML
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(355, 223);
+            this.label4.Location = new System.Drawing.Point(361, 150);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 20);
+            this.label4.Size = new System.Drawing.Size(65, 20);
             this.label4.TabIndex = 42;
-            this.label4.Text = "Saltique";
+            this.label4.Text = "Saltigue";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(365, 243);
+            this.label5.Location = new System.Drawing.Point(361, 191);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 20);
+            this.label5.Size = new System.Drawing.Size(74, 20);
             this.label5.TabIndex = 43;
-            this.label5.Text = "Saber";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label6.Location = new System.Drawing.Point(355, 263);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 20);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Audixas";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label7.Location = new System.Drawing.Point(371, 283);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 20);
-            this.label7.TabIndex = 45;
-            this.label7.Text = "Peen";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label8.Location = new System.Drawing.Point(371, 303);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 20);
-            this.label8.TabIndex = 46;
-            this.label8.Text = "Polar";
+            this.label5.Text = "Saberhap";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label9.Location = new System.Drawing.Point(452, 203);
+            this.label9.Location = new System.Drawing.Point(361, 130);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 20);
+            this.label9.Size = new System.Drawing.Size(91, 20);
             this.label9.TabIndex = 47;
-            this.label9.Text = "Jurassic";
+            this.label9.Text = "Jurassic420";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label10.Location = new System.Drawing.Point(452, 223);
+            this.label10.Location = new System.Drawing.Point(361, 170);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 20);
+            this.label10.Size = new System.Drawing.Size(46, 20);
             this.label10.TabIndex = 48;
             this.label10.Text = "Huan";
             // 
@@ -401,12 +346,11 @@ namespace TML
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label11.Location = new System.Drawing.Point(452, 243);
+            this.label11.Location = new System.Drawing.Point(505, 130);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(116, 20);
+            this.label11.Size = new System.Drawing.Size(114, 20);
             this.label11.TabIndex = 49;
             this.label11.Text = "GirthWormJim";
             // 
@@ -414,51 +358,35 @@ namespace TML
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label12.Location = new System.Drawing.Point(443, 263);
+            this.label12.Location = new System.Drawing.Point(505, 150);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 20);
+            this.label12.Size = new System.Drawing.Size(118, 20);
             this.label12.TabIndex = 50;
-            this.label12.Text = "DildoBaggins";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label13.Location = new System.Drawing.Point(443, 283);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 20);
-            this.label13.TabIndex = 51;
-            this.label13.Text = "Lolla Rossa";
+            this.label12.Text = "Bilboswaggains";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label14.Location = new System.Drawing.Point(443, 303);
+            this.label14.Location = new System.Drawing.Point(505, 170);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 20);
+            this.label14.Size = new System.Drawing.Size(113, 20);
             this.label14.TabIndex = 52;
-            this.label14.Text = "VarmintMan";
+            this.label14.Text = "varmintman56";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label15.Location = new System.Drawing.Point(608, 212);
+            this.label15.Location = new System.Drawing.Point(505, 190);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 20);
+            this.label15.Size = new System.Drawing.Size(34, 20);
             this.label15.TabIndex = 53;
             this.label15.Text = "Lad";
             // 
@@ -466,53 +394,25 @@ namespace TML
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label16.Location = new System.Drawing.Point(593, 232);
+            this.label16.Location = new System.Drawing.Point(361, 251);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(228, 20);
+            this.label16.Size = new System.Drawing.Size(269, 20);
             this.label16.TabIndex = 54;
-            this.label16.Text = "Yall Anime Fucks at LF general";
+            this.label16.Text = "Y\'all anime fucks at Landfall #general";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label17.Location = new System.Drawing.Point(584, 252);
+            this.label17.Location = new System.Drawing.Point(505, 211);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(70, 20);
+            this.label17.Size = new System.Drawing.Size(68, 20);
             this.label17.TabIndex = 55;
             this.label17.Text = "Ear Fluff";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label18.Location = new System.Drawing.Point(593, 272);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 20);
-            this.label18.TabIndex = 56;
-            this.label18.Text = "MikeyDs";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label19.Location = new System.Drawing.Point(593, 292);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(49, 20);
-            this.label19.TabIndex = 57;
-            this.label19.Text = "Weed";
             // 
             // label20
             // 
@@ -521,25 +421,37 @@ namespace TML
             this.label20.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label20.Location = new System.Drawing.Point(371, 335);
+            this.label20.Location = new System.Drawing.Point(342, 295);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(303, 20);
             this.label20.TabIndex = 58;
             this.label20.Text = "And you, you breathtaking mother fucker";
             // 
-            // linkLabel1
+            // label21
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
-            this.linkLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.linkLabel1.Location = new System.Drawing.Point(463, 90);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(139, 17);
-            this.linkLabel1.TabIndex = 59;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Join The TABG Discord!";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.YellowGreen;
+            this.label21.Location = new System.Drawing.Point(31, 142);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(195, 20);
+            this.label21.TabIndex = 60;
+            this.label21.Text = "Audixas - Launcher Design";
+            // 
+            // discordButton
+            // 
+            this.discordButton.BackColor = System.Drawing.Color.Transparent;
+            this.discordButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.discordButton.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discordButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.discordButton.Location = new System.Drawing.Point(18, 20);
+            this.discordButton.Name = "discordButton";
+            this.discordButton.Size = new System.Drawing.Size(127, 43);
+            this.discordButton.TabIndex = 61;
+            this.discordButton.Text = "Join our Discord!";
+            this.discordButton.UseVisualStyleBackColor = false;
+            this.discordButton.Click += new System.EventHandler(this.discordButton_Click);
             // 
             // Launcher
             // 
@@ -549,23 +461,18 @@ namespace TML
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::TML.Properties.Resources.gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1066, 483);
-            this.Controls.Add(this.linkLabel1);
+            this.ClientSize = new System.Drawing.Size(977, 483);
+            this.Controls.Add(this.discordButton);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -622,22 +529,17 @@ namespace TML
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button discordButton;
     }
 }
 

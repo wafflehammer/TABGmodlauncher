@@ -146,18 +146,6 @@ namespace TML
 
         private void discordButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://discord.gg/CwrNugT");
-        }
-
-  
-
-
-        
-
-    
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
             System.Diagnostics.Process.Start("https://discord.gg/rja554A");
         }
     }
