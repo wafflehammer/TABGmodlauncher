@@ -1,5 +1,4 @@
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
@@ -16,8 +15,7 @@ namespace TML
         {
             InitializeComponent();
             mods = false;
-            gamePath = "";
-            radioButton1.Checked = true;
+            gameOriginal.Checked = true;
            
         }
 
@@ -26,8 +24,23 @@ namespace TML
 
         private void launch_Click(object sender, EventArgs e)
         {
+            {
+                if (System.IO.Directory.Exists("C:\\Program Files(x86)\\Steam\\steamapps\\common\\TotallyAccurateBattlegrounds"))
+                {
+                    openFileDialog1.InitialDirectory = "C:\\Program Files(x86)\\Steam\\steamapps\\common\\TotallyAccurateBattlegrounds";
+                }
+                openFileDialog1.Filter = "TABG Executable|TotallyAccurateBattlegrounds.exe";
+
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    gamePath = openFileDialog1.FileName;
+                    gamePath = Path.GetDirectoryName(gamePath);
+
+                    File.WriteAllText(Path.GetTempPath() + @"\.TML", gamePath);
+                }
+            }
             launch.Enabled = true;
-            if (radioButton1.Checked)
+            if (gameOriginal.Checked)
             {
                 mods = false;
             }
@@ -62,19 +75,28 @@ namespace TML
 
         private void Launcher_Load(object sender, EventArgs e)
         {
-            FolderChooser f = new FolderChooser();
-            try
+            if (System.IO.Directory.Exists("C:\\Program Files(x86)\\Steam\\steamapps\\common\\TotallyAccurateBattlegrounds"))
             {
-                if (!File.Exists(Path.GetTempPath() + @"\.TML"))
-                {
-                    f.ShowDialog();
-                }
-                gamePath = File.ReadAllText(Path.GetTempPath() + @"\.TML");
+                gamePath = "C:\\Program Files(x86)\\Steam\\steamapps\\common\\TotallyAccurateBattlegrounds";
+                installDirectory.Text = gamePath;
+                return;
             }
-            catch (Exception excp1)
+            else
             {
-                MessageBox.Show(excp1.ToString(), "Frickin heck. Report this to the Discord!");
-                System.Diagnostics.Process.Start("https://discord.gg/CwrNugT");
+                gamePath = "";
+                MessageBox.Show("Game directory not found. You probably have a non-standard Steam install directory. Choose the location where TABG is installed.", "Game directory not found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                openFileDialog1.Filter = "TABG Executable|TotallyAccurateBattlegrounds.exe";
+                openFileDialog1.InitialDirectory = gamePath;
+
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    gamePath = openFileDialog1.FileName;
+                    gamePath = Path.GetDirectoryName(gamePath);
+
+                    File.WriteAllText(Path.GetTempPath() + @"\.TML", gamePath);
+                    installDirectory.Text = gamePath;
+                }
             }
         }
 
@@ -146,63 +168,7 @@ namespace TML
 
         private void discordButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://discord.gg/CwrNugT");
+            System.Diagnostics.Process.Start("https://discord.gg/6Vex6wT");
         }
-
-        private void aboutButton_Click(object sender, EventArgs e)
-        {
-            // hide launcher
-            titleLabel.Hide();
-            changeDir.Hide();
-            aboutButton.Hide();
-            modChooser.Hide();
-            discordLabel.Hide();
-            downloadBar.Hide();
-            
-            launch.Hide();
-           
-
-            //show about
-            mhnd.Show();
-            testAndFeed.Show();
-            mfc.Show();
-            polarnf.Show();
-            audixas.Show();
-            commSupport.Show();
-            commName.Show();
-            dev.Show();
-            aboutLabel.Show();
-           
-            aboutLogo.Show();
-        }
-
-        private void backButton_Click(object sender, EventArgs e)
-        {
-            // Show launcher
-            titleLabel.Show();
-            changeDir.Show();
-            aboutButton.Show();
-            modChooser.Show();
-            discordLabel.Show();
-            downloadBar.Show();
-          
-            launch.Show();
-          
-
-            //Hide about
-            mhnd.Hide();
-            testAndFeed.Hide();
-            mfc.Hide();
-            polarnf.Hide();
-            audixas.Hide();
-            commSupport.Hide();
-            commName.Hide();
-            dev.Hide();
-            aboutLabel.Hide();
-       
-            aboutLogo.Hide();
-        }
-
-        
     }
 }
