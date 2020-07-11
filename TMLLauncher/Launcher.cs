@@ -66,11 +66,11 @@ namespace TML
 
                 if (mods)
                 {
-                    DownloadFile(@"http://github.com/wafflehammer/TabgGunGame/raw/master/Assembly-CSharp.dll", Path.GetTempPath() + @"dl.dll");
+                    DownloadFile(@"http://github.com/Audixas/TabgGunGame/raw/master/Assembly-CSharp.dll", Path.GetTempPath() + @"dl.dll");
                 }
                 else
                 {
-                    DownloadFile(@"http://github.com/wafflehammer/TabgGunGame/raw/master/latest.dll", Path.GetTempPath() + @"dl.dll");
+                    DownloadFile(@"http://github.com/Audixas/TabgGunGame/raw/master/latest.dll", Path.GetTempPath() + @"dl.dll");
                 }
 
                 gamePath = System.IO.File.ReadAllText(Path.GetTempPath() + @"tmlsettings.txt").ToString();
