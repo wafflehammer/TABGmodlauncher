@@ -1,2 +1,0 @@
-# TML
-TABG Mod Loader
