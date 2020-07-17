@@ -9,3 +9,14 @@ C:\Users\iphone\Source\Repos\TABGmodlauncher3\obj\x64\Release\TML.csproj.Generat
 C:\Users\iphone\Source\Repos\TABGmodlauncher3\obj\x64\Release\TML.csproj.CoreCompileInputs.cache
 C:\Users\iphone\Source\Repos\TABGmodlauncher3\obj\x64\Release\TML.exe
 C:\Users\iphone\Source\Repos\TABGmodlauncher3\obj\x64\Release\TML.pdb
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\bin\x64\Release\TML.exe.config
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\bin\x64\Release\TML.exe
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\bin\x64\Release\TML.pdb
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\obj\x64\Release\TML.csprojAssemblyReference.cache
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\obj\x64\Release\TML.Launcher.resources
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\obj\x64\Release\TML.FolderChooser.resources
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\obj\x64\Release\TML.Properties.Resources.resources
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\obj\x64\Release\TML.csproj.GenerateResource.cache
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\obj\x64\Release\TML.csproj.CoreCompileInputs.cache
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\obj\x64\Release\TML.exe
+C:\Users\iphone\Source\Repos\TABGmodlauncher4\obj\x64\Release\TML.pdb

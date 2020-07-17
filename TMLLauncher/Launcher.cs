@@ -11,6 +11,9 @@ namespace TML
 {
     public partial class Launcher : Form
     {
+
+        int[] allInstances = new int[32];
+        byte curInstance = 0;
         public Launcher()
         {
             InitializeComponent();
@@ -18,7 +21,7 @@ namespace TML
             gameOriginal.Checked = true;
 
         }
-
+        public bool batchmode = false;
         public bool mods = false;
         public string gamePath = "";
         private bool check_path()
@@ -82,32 +85,35 @@ namespace TML
         {
             if (!check_path())
             {
+                MessageBox.Show("how did you fuck this up?", "seriously");
                 return;
             }
 
-
-
-
             launch.Enabled = true;
-                if (gameOriginal.Checked)
-                {
-                    mods = false;
-                }
-                else
-                {
-                    mods = true;
-                }
-            
-        
-
+            if (gameOriginal.Checked)
+            {
+                launch_game(false, false);
+            }
+            else
+            {
+                launch_game(true, false);
+            }
+        }
+        public void launch_game(bool modded, bool batchmode)
+        {
             try
             {
                 if (File.Exists(Path.GetTempPath() + @"dl.dll"))
                 {
                     File.Delete(Path.GetTempPath() + @"dl.dll");
                 }
+                if (batchmode)
+                {
+                    allInstances[curInstance] = System.Diagnostics.Process.Start(Path.Combine(gamePath, @"TotallyAccurateBattlegrounds.exe"), "-batchmode").Id;
+                    curInstance++;
 
-                if (mods)
+                }
+                else if (modded)
                 {
                     DownloadFile(@"http://github.com/Audixas/TabgGunGame/raw/master/Assembly-CSharp.dll", Path.GetTempPath() + @"dl.dll");
                 }
@@ -123,7 +129,6 @@ namespace TML
                 MessageBox.Show(excp1.ToString(), "fuckin niggers ask miley about this on the Discord!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void Launcher_Load(object sender, EventArgs e)
         {
             if (check_path())
@@ -173,7 +178,9 @@ namespace TML
         {
             if (e.Cancelled == true)
             {
+          
                 MessageBox.Show("Download has been canceled.");
+                
             }
             else
             {
@@ -181,30 +188,60 @@ namespace TML
                 {
                     System.IO.File.Copy(Path.GetTempPath() + @"dl.dll", gamePath + @"\TotallyAccurateBattlegrounds_Data\Managed\Assembly-CSharp.dll", true);
                     File.Delete(Path.GetTempPath() + @"dl.dll");
-                    try
-                    {
-                        System.Diagnostics.Process.Start(@"steam://rungameid/823130");
-                        foreach (System.Diagnostics.Process proc in System.Diagnostics.Process.GetProcessesByName("agent"))
-                        {
-                            proc.Kill();
-                        }
-                        Application.Exit();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error :c", "Couldn't launch game.\nIs Steam installed?", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    
                 }
                 catch (Exception x)
                 {
+                    
                     MessageBox.Show("Unable to copy DLL file\n" + x, "Error :c", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
+                try
+                {
+                    // System.Diagnostics.ProcessStartInfo processStartInfo = new System.Diagnostics.ProcessStartInfo(@"steam://rungameid/823130","-batchmode");
+
+                    allInstances[curInstance] = System.Diagnostics.Process.Start(Path.Combine(gamePath, @"TotallyAccurateBattlegrounds.exe")).Id;
+                    curInstance++;
+                    // foreach (System.Diagnostics.Process proc in System.Diagnostics.Process.GetProcessesByName("agent"))
+                    // {
+                    //    proc.Kill();
+                    // }
+                    Application.Exit();
+                }
+                catch
+                {
+
+                    MessageBox.Show("Error :c", "Couldn't launch game.\nIs Steam installed?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
             }
         }
 
         private void discordButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://discord.gg/6Vex6wT");
+        }
+
+        private void launchHeadless_Click(object sender, EventArgs e)
+        {
+            launch_game(true, true);
+        }
+
+        private void killHeadless_Click(object sender, EventArgs e)
+        {
+            foreach (System.Diagnostics.Process proc in System.Diagnostics.Process.GetProcessesByName("TotallyAccurateBattlegrounds"))
+            {
+              //  foreach (int procID in allInstances)
+               // {
+              //      if (proc.Id == procID)
+                //    {
+                        proc.Kill();
+               //     }
+
+             //   }
+
+            }
         }
     }
 }

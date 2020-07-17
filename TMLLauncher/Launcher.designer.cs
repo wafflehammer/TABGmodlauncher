@@ -51,7 +51,7 @@ namespace TML
             this.launch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.launch.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace;
             this.launch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.launch.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.launch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.launch.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.launch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.launch.Location = new System.Drawing.Point(9, 380);
@@ -135,7 +135,7 @@ namespace TML
             // 
             this.installDirectoryDisplay.BackColor = System.Drawing.Color.Transparent;
             this.installDirectoryDisplay.Controls.Add(this.installDirectory);
-            this.installDirectoryDisplay.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
+            this.installDirectoryDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.installDirectoryDisplay.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.installDirectoryDisplay.Location = new System.Drawing.Point(9, 262);
             this.installDirectoryDisplay.Name = "installDirectoryDisplay";
@@ -149,7 +149,7 @@ namespace TML
             this.installDirectory.AutoSize = true;
             this.installDirectory.Location = new System.Drawing.Point(6, 18);
             this.installDirectory.Name = "installDirectory";
-            this.installDirectory.Size = new System.Drawing.Size(0, 17);
+            this.installDirectory.Size = new System.Drawing.Size(0, 16);
             this.installDirectory.TabIndex = 0;
             // 
             // launchHeadless
@@ -159,7 +159,7 @@ namespace TML
             this.launchHeadless.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.launchHeadless.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace;
             this.launchHeadless.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.launchHeadless.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
+            this.launchHeadless.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.launchHeadless.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.launchHeadless.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.launchHeadless.Location = new System.Drawing.Point(257, 380);
@@ -169,6 +169,7 @@ namespace TML
             this.launchHeadless.TabIndex = 64;
             this.launchHeadless.Text = "Launch Headless Client";
             this.launchHeadless.UseVisualStyleBackColor = false;
+            this.launchHeadless.Click += new System.EventHandler(this.launchHeadless_Click);
             // 
             // killHeadless
             // 
@@ -177,7 +178,7 @@ namespace TML
             this.killHeadless.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.killHeadless.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace;
             this.killHeadless.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.killHeadless.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F);
+            this.killHeadless.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.killHeadless.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.killHeadless.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.killHeadless.Location = new System.Drawing.Point(257, 409);
@@ -187,6 +188,7 @@ namespace TML
             this.killHeadless.TabIndex = 65;
             this.killHeadless.Text = "Kill Headless Client(s)";
             this.killHeadless.UseVisualStyleBackColor = false;
+            this.killHeadless.Click += new System.EventHandler(this.killHeadless_Click);
             // 
             // Launcher
             // 
