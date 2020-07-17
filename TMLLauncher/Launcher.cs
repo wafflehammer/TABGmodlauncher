@@ -14,6 +14,7 @@ namespace TML
 
         int[] allInstances = new int[32];
         byte curInstance = 0;
+        int GameInstanceNotHeadless;
         public Launcher()
         {
             InitializeComponent();
@@ -88,45 +89,83 @@ namespace TML
                 MessageBox.Show("how did you fuck this up?", "seriously");
                 return;
             }
+            bool no_update = false;
+            if (Control.ModifierKeys == Keys.Control)
+            {
+                no_update = true;
+            }
 
             launch.Enabled = true;
             if (gameOriginal.Checked)
             {
-                launch_game(false, false);
+                launch_game(false, false, no_update);
             }
             else
             {
-                launch_game(true, false);
+                launch_game(true, false, no_update);
             }
         }
-        public void launch_game(bool modded, bool batchmode)
+        public void launch_game(bool modded, bool batchmode, bool no_update)
         {
-            try
+
+            if (no_update)
             {
-                if (File.Exists(Path.GetTempPath() + @"dl.dll"))
-                {
-                    File.Delete(Path.GetTempPath() + @"dl.dll");
-                }
                 if (batchmode)
                 {
-                    allInstances[curInstance] = System.Diagnostics.Process.Start(Path.Combine(gamePath, @"TotallyAccurateBattlegrounds.exe"), "-batchmode").Id;
-                    curInstance++;
+                    try
+                    {
+                        allInstances[curInstance] = System.Diagnostics.Process.Start(Path.Combine(gamePath, @"TotallyAccurateBattlegrounds.exe"), "-batchmode").Id;
+                        return;
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(e.ToString(),"u fucked up");
+                    }
 
-                }
-                else if (modded)
-                {
-                    DownloadFile(@"http://github.com/Audixas/TabgGunGame/raw/master/Assembly-CSharp.dll", Path.GetTempPath() + @"dl.dll");
                 }
                 else
                 {
-                    DownloadFile(@"http://github.com/Audixas/TabgGunGame/raw/master/latest.dll", Path.GetTempPath() + @"dl.dll");
-                }
+                    try
+                    {
+                        allInstances[curInstance] = System.Diagnostics.Process.Start(Path.Combine(gamePath, @"TotallyAccurateBattlegrounds.exe")).Id;
+                        return;
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(e.ToString(),"u fucked up");
+                    }
 
-                gamePath = System.IO.File.ReadAllText(Path.GetTempPath() + @"tmlsettings.txt").ToString();
+                }
             }
-            catch (Exception excp1)
+            else
             {
-                MessageBox.Show(excp1.ToString(), "fuckin niggers ask miley about this on the Discord!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                try
+                {
+                    if (File.Exists(Path.GetTempPath() + @"dl.dll"))
+                    {
+                        File.Delete(Path.GetTempPath() + @"dl.dll");
+                    }
+                    if (batchmode)
+                    {
+                        allInstances[curInstance] = System.Diagnostics.Process.Start(Path.Combine(gamePath, @"TotallyAccurateBattlegrounds.exe"), "-batchmode").Id;
+                        curInstance++;
+
+                    }
+                    else if (modded)
+                    {
+                        DownloadFile(@"http://github.com/Audixas/TabgGunGame/raw/master/Assembly-CSharp.dll", Path.GetTempPath() + @"dl.dll");
+                    }
+                    else
+                    {
+                        DownloadFile(@"http://github.com/Audixas/TabgGunGame/raw/master/latest.dll", Path.GetTempPath() + @"dl.dll");
+                    }
+
+                    gamePath = System.IO.File.ReadAllText(Path.GetTempPath() + @"tmlsettings.txt").ToString();
+                }
+                catch (Exception excp1)
+                {
+                    MessageBox.Show(excp1.ToString(), "fuckin niggers ask miley about this on the Discord!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
         private void Launcher_Load(object sender, EventArgs e)
@@ -137,14 +176,7 @@ namespace TML
                 MessageBox.Show("failed to find game directory despite every attempt to hold your hand...", "you fuckin idiot");
         }
 
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            // File.Delete(Path.GetTempPath() + @"\.TML");
-            System.Diagnostics.Process.Start(Directory.GetCurrentDirectory() + @"\TML.exe");
-            Application.Exit();
-        }
-
-        public void DownloadFile(string urlAddress, string location)
+          public void DownloadFile(string urlAddress, string location)
         {
             using (WebClient webClient = new WebClient())
             {
@@ -201,12 +233,10 @@ namespace TML
                     // System.Diagnostics.ProcessStartInfo processStartInfo = new System.Diagnostics.ProcessStartInfo(@"steam://rungameid/823130","-batchmode");
 
                     allInstances[curInstance] = System.Diagnostics.Process.Start(Path.Combine(gamePath, @"TotallyAccurateBattlegrounds.exe")).Id;
+                    GameInstanceNotHeadless = allInstances[curInstance];
                     curInstance++;
-                    // foreach (System.Diagnostics.Process proc in System.Diagnostics.Process.GetProcessesByName("agent"))
-                    // {
-                    //    proc.Kill();
-                    // }
-                    Application.Exit();
+        
+                 //   Application.Exit();
                 }
                 catch
                 {
@@ -225,7 +255,7 @@ namespace TML
 
         private void launchHeadless_Click(object sender, EventArgs e)
         {
-            launch_game(true, true);
+            launch_game(true, true, true);
         }
 
         private void killHeadless_Click(object sender, EventArgs e)
@@ -234,10 +264,11 @@ namespace TML
             {
               //  foreach (int procID in allInstances)
                // {
-              //      if (proc.Id == procID)
-                //    {
+              // 
+                if (proc.Id != GameInstanceNotHeadless)
+                   {
                         proc.Kill();
-               //     }
+                 }
 
              //   }
 
